@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  min-height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  z-index: 1;
+  .hdrcnt {
+    width: 73%;
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+      width: 18%;
+    }
+    .number {
+      display: flex;
+      min-height: 75px;
+      width: 28%;
+      a {
+        text-decoration: none;
+        color: black;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        i {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50%;
+          min-height: 75px;
+          color: white;
+          background-color: red;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+.navBar {
+  width: 100%;
+  min-height: 55px;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgba(128, 128, 128, 0.222);
+
+  .navbarCnt {
+    width: 44%;
+    position: relative;
+    .search {
+      display: flex;
+      .searchBtn {
+        border: none;
+        background-color: transparent;
+      }
+    }
+    .productSearch {
+      background-color: white;
+      position: absolute;
+      padding-left: 20px;
+      width: 100%;
+      min-height: 0px;
+      top: 50px;
+      img {
+        width: 30%;
+      }
+    }
+    .navUl {
+      display: flex;
+      gap: 10px;
+      li {
+        a {
+          font-family: Poppins, sans-serif;
+          font-size: 12px;
+          transition: 0.3s;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          i {
+            font-size: 8px;
+          }
+          &:hover {
+            color: red;
+          }
+        }
+      }
+      .pages {
+        &:hover .pagesDropdown {
+          display: block;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 20px;
+          background-color: white;
+          li {
+            transition: 0.4s;
+            cursor: pointer;
+            &:hover {
+              color: red;
+            }
+          }
+        }
+        .pagesDropdown {
+          display: none;
+          list-style: none;
+          font-family: Poppins, sans-serif;
+          font-size: 12px;
+          width: 220%;
+          min-height: 90px;
+        }
+      }
+    }
+  }
+}
+#account {
+  width: 100%;
+  min-height: 500px;
+  #form {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      color: red;
+    }
+    .register {
+      width: 45%;
+      min-height: 300px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      background-color: rgba(128, 128, 128, 0.204);
+      .nameSurname {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        input {
+          width: 48%;
+          min-height: 60px;
+          background-color: red;
+          border: none;
+          color: white;
+
+          &::placeholder {
+            color: white;
+          }
+        }
+      }
+      .ageEmail {
+        width: 100%;
+        display: flex;
+        gap: 15px;
+        .ageInp {
+          width: 10%;
+          min-height: 60px;
+          background-color: red;
+          border: none;
+          color: white;
+
+          &::placeholder {
+            color: white;
+          }
+        }
+        .emailInp {
+          width: 60%;
+          min-height: 60px;
+          background-color: red;
+          border: none;
+          color: white;
+          &::placeholder {
+            color: white;
+          }
+        }
+      }
+      .registerBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 40px;
+        width: 13%;
+        background-color: red;
+        color: white;
+        border-radius: 15px;
+        border: none;
+      }
+    }
+  }
+}

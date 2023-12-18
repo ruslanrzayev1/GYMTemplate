@@ -1,0 +1,344 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  min-height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+  .hdrcnt {
+    width: 73%;
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+      width: 18%;
+    }
+    .number {
+      display: flex;
+      min-height: 75px;
+      width: 28%;
+      a {
+        text-decoration: none;
+        color: black;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        i {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50%;
+          min-height: 75px;
+          color: white;
+          background-color: red;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+.navBar {
+  width: 100%;
+  min-height: 55px;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgba(128, 128, 128, 0.222);
+
+  .navbarCnt {
+    width: 60%;
+    position: relative;
+    .search {
+      display: flex;
+      .searchBtn {
+        border: none;
+        background-color: transparent;
+      }
+    }
+    .productSearch {
+      background-color: white;
+      position: absolute;
+      padding-left: 20px;
+      width: 100%;
+      min-height: 0px;
+      top: 50px;
+      img {
+        width: 30%;
+      }
+    }
+    .navUl {
+      display: flex;
+      gap: 10px;
+      li {
+        a {
+          font-family: Poppins, sans-serif;
+          font-size: 12px;
+          transition: 0.3s;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          i {
+            font-size: 8px;
+          }
+          &:hover {
+            color: red;
+          }
+        }
+      }
+      .pages {
+        &:hover .pagesDropdown {
+          display: block;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 20px;
+          background-color: white;
+          li {
+            transition: 0.4s;
+            cursor: pointer;
+            &:hover {
+              color: red;
+            }
+          }
+        }
+        .pagesDropdown {
+          display: none;
+          list-style: none;
+          font-family: Poppins, sans-serif;
+          font-size: 12px;
+          width: 220%;
+          min-height: 90px;
+        }
+      }
+    }
+  }
+}
+#realFitness {
+  width: 100%;
+  min-height: 703px;
+  background-image: url(/assets/images/header-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .blured {
+    width: 100%;
+    min-height: 703px;
+    background-color: rgba(0, 0, 0, 0.414);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .realFitnessTxt {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        font-family: Poppins, sans-serif;
+        font-size: 60px;
+        color: white;
+      }
+      span {
+        font-size: 14px;
+        font-family: Poppins, sans-serif;
+        color: white;
+      }
+    }
+  }
+}
+#homeProdsCnt {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  .homeProdsCntTxt {
+    width: 50%;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      font-family: Poppins, sans-serif;
+    }
+  }
+  .prodsCnt {
+    width: 73%;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .homeProds {
+      width: 32%;
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 100%;
+      }
+      h2 {
+        font-size: 24px;
+      }
+      button{
+        background-color: red;
+        color: white;
+        border: none;
+        width: 33%;
+        min-height: 40px;
+        border-radius: 25px;
+      }
+    }
+  }
+  .loadMore {
+    color: white;
+    background-color: red;
+    width: 10%;
+    min-height: 40px;
+    border: none;
+    border-radius: 15px;
+  }
+}
+#topCourses {
+  width: 100%;
+  min-height: 1250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .topCoursesTxt {
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      font-family: Poppins, sans-serif;
+    }
+  }
+  .courses {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/assets/images/c1.jpg);
+    width: 98%;
+    min-height: 220px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    span {
+      color: white;
+      background-color: red;
+      position: absolute;
+      bottom: 40px;
+      left: 20px;
+      width: 50%;
+      min-height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .coursePrice {
+      width: 100%;
+      background-color: white;
+      min-height: 180px;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      bottom: -150px;
+    }
+  }
+}
+#hugeTransaction {
+  width: 100%;
+  min-height: 430px;
+  background-image: url(/assets/images/callto-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .bluredSecond {
+    width: 100%;
+    min-height: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.467);
+    .hugeTransactionTxt {
+      width: 100%;
+      min-height: 200px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        color: white;
+      }
+      span {
+        width: 62%;
+        text-align: center;
+        color: white;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        background-color: red;
+        width: 15%;
+        min-height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        transition: 0.4s;
+        &:hover {
+          background-color: transparent;
+          border: 1px solid white;
+        }
+      }
+    }
+  }
+}
+footer {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    width: 100%;
+    a {
+      text-decoration: none;
+      color: red;
+    }
+  }
+  .iconCnt {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 8px;
+    i {
+      color: white;
+      background-color: black;
+      width: 7%;
+      min-height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.4s;
+      cursor: pointer;
+      &:hover {
+        background-color: red;
+      }
+    }
+  }
+}

@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  min-height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  z-index: 1;
+  .hdrcnt {
+    width: 73%;
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+      width: 18%;
+    }
+    .number {
+      display: flex;
+      min-height: 75px;
+      width: 28%;
+      a {
+        text-decoration: none;
+        color: black;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        i {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50%;
+          min-height: 75px;
+          color: white;
+          background-color: red;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+.navBar {
+  width: 100%;
+  min-height: 55px;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgba(128, 128, 128, 0.222);
+
+  .navbarCnt {
+    width: 60%;
+    position: relative;
+    .search {
+      display: flex;
+      .searchBtn {
+        border: none;
+        background-color: transparent;
+      }
+    }
+    .productSearch {
+      background-color: white;
+      position: absolute;
+      padding-left: 20px;
+      width: 100%;
+      min-height: 0px;
+      top: 50px;
+      img {
+        width: 30%;
+      }
+    }
+    .navUl {
+      display: flex;
+      gap: 10px;
+      li {
+        a {
+          font-family: Poppins, sans-serif;
+          font-size: 12px;
+          transition: 0.3s;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          i {
+            font-size: 8px;
+          }
+          &:hover {
+            color: red;
+          }
+        }
+      }
+      .pages {
+        &:hover .pagesDropdown {
+          display: block;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 20px;
+          background-color: white;
+          li {
+            transition: 0.4s;
+            cursor: pointer;
+            &:hover {
+              color: red;
+            }
+          }
+        }
+        .pagesDropdown {
+          display: none;
+          list-style: none;
+          font-family: Poppins, sans-serif;
+          font-size: 12px;
+          width: 220%;
+          min-height: 90px;
+        }
+      }
+    }
+  }
+}
+#cart {
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(155, 152, 152, 0.25);
+
+  .cartsCnt {
+    width: 90%;
+    min-height: 650px;
+    border: 1px solid red;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+
+    h3 {
+      font-family: "Playfair+Display", times, serif;
+      color: red;
+    }
+    .cartCnt {
+      width: 90%;
+      min-height: 600px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .prodCnts {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        border: 1px solid red;
+        border-radius: 5px;
+        img {
+          width: 40%;
+        }
+        p {
+          font-size: 20px;
+        }
+        button {
+          width: 3%;
+          min-height: 35px;
+          border-radius: 50%;
+          border: 1px solid red;
+          background-color: transparent;
+          i {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    width: 100%;
+    a {
+      text-decoration: none;
+      color: red;
+    }
+  }
+  .iconCnt {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 8px;
+    i {
+      color: white;
+      background-color: black;
+      width: 7%;
+      min-height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.4s;
+      cursor: pointer;
+      &:hover {
+        background-color: red;
+      }
+    }
+  }
+}
